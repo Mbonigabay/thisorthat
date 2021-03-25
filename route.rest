@@ -1,0 +1,22 @@
+# Index
+GET http://localhost:8080/api/v1/users?page=1&limit=25
+
+# Store
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "JohnDoe@gmail.com",
+    "password": "123"
+}
+
+# Show
+###
+GET http://localhost:8080/api/v1/users/h7jF4cAhJ7ZGyOQTMaBTh3C7speK36
+
+#Swagger
+###
+GET http://localhost:8080/v2/api-docs
